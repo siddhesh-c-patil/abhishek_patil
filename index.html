@@ -10,17 +10,14 @@
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .font-serif-brand { font-family: 'Marcellus', serif; }
         .section-padding { padding: 100px 0; }
-        .glass-nav { backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.9); }
+        .glass-nav { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.9); }
+        .regulatory-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
         
-        .hero-visual {
-            background-image: url('https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=2080&auto=format&fit=crop');
+        /* High-Contrast Professional Image (Watermark-free) */
+        .hero-bg-image {
+            background-image: url('https://images.unsplash.com/photo-1582719471384-894fbb16e024?q=80&w=2000&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
-        }
-        .text-gradient {
-            background: linear-gradient(to right, #0891b2, #0e7490);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
@@ -30,10 +27,10 @@
         <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
             <div class="font-serif-brand text-xl tracking-[0.2em] text-slate-900 uppercase">Abhishek Patil</div>
             <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500">
-                <a href="#about" class="hover:text-cyan-700 transition">About</a>
-                <a href="#expertise" class="hover:text-cyan-700 transition">Expertise</a>
-                <a href="#experience" class="hover:text-cyan-700 transition">Experience</a>
-                <a href="#contact" class="hover:text-cyan-700 transition text-cyan-700 border-b border-cyan-500/0 hover:border-cyan-500">Get in Touch</a>
+                <a href="#about" class="hover:text-amber-600 transition">About</a>
+                <a href="#expertise" class="hover:text-amber-600 transition">Expertise</a>
+                <a href="#experience" class="hover:text-amber-600 transition">Experience</a>
+                <a href="#contact" class="hover:text-amber-600 transition">Contact</a>
             </div>
         </div>
     </nav>
@@ -41,108 +38,99 @@
     <header class="pt-40 pb-24 bg-white">
         <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
             <div>
-                <div class="inline-block px-3 py-1 border border-cyan-100 bg-cyan-50 text-cyan-800 text-[10px] uppercase tracking-widest font-bold mb-8">
-                    Regulatory Affairs Specialist
+                <div class="inline-block px-3 py-1 border border-amber-200 bg-amber-50 text-amber-700 text-[10px] uppercase tracking-widest font-bold mb-8">
+                    Specialist: Regulatory Affairs
                 </div>
                 <h1 class="font-serif-brand text-5xl md:text-7xl mb-8 leading-[1.1] text-slate-900">
-                    Precision in <br><span class="text-gradient italic">Global Compliance.</span>
+                    Precision in <br><span class="text-amber-600 italic">Global Compliance.</span>
                 </h1>
                 <p class="text-slate-500 text-lg max-w-md font-light leading-relaxed mb-10">
-                    Strategic specialist ensuring high-integrity market access through meticulous dossier management and global standards alignment.
+                    Facilitating seamless market access through strategic dossier management and adherence to international healthcare standards.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#experience" class="bg-slate-900 text-white px-8 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-cyan-800 transition shadow-xl text-center">Professional History</a>
-                    <a href="mailto:patilabhishek503@gmail.com" class="border border-slate-200 px-8 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-slate-50 transition text-center">Contact Specialist</a>
-                </div>
+                <a href="#experience" class="bg-slate-900 text-white px-8 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-amber-600 transition shadow-lg">View Experience</a>
             </div>
             
-            <div class="h-[520px] hero-visual rounded-sm shadow-2xl border border-slate-100 relative group overflow-hidden">
-                <div class="absolute inset-0 bg-cyan-900/5 group-hover:bg-transparent transition duration-500"></div>
+            <div class="h-[480px] relative hero-bg-image rounded-sm overflow-hidden shadow-2xl">
+                <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition duration-500"></div>
             </div>
         </div>
     </header>
 
     <section id="about" class="section-padding bg-slate-50 border-y border-slate-100">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-xs uppercase tracking-[0.5em] text-cyan-800 font-bold mb-10 uppercase">Executive Identity</h2>
-            <p class="text-2xl font-serif-brand text-slate-800 leading-relaxed italic">
-                "Specializing in Regulatory Affairs, I act as the critical link between pharmaceutical innovation and global healthcare mandates. My mission is to ensure life-saving products reach global markets with absolute safety and quality."
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xs uppercase tracking-[0.5em] text-amber-600 font-bold mb-10 italic text-center">Identity & Vision</h2>
+            <p class="text-2xl font-serif-brand text-slate-800 leading-relaxed text-center italic">
+                "Specializing in Regulatory Affairs, I ensure that pharmaceutical innovations navigate the intricate web of global law and safety standards. My commitment lies in maintaining high-integrity compliance to deliver life-saving products to global markets with efficiency and absolute quality."
             </p>
         </div>
     </section>
 
-    <section id="expertise" class="section-padding bg-white">
+    <section id="expertise" class="section-padding bg-white border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-xs uppercase tracking-[0.5em] text-slate-400 font-bold mb-16 uppercase">Specialized Competencies</h2>
             <div class="grid md:grid-cols-3 gap-12">
                 <div class="p-8 bg-[#FBFBFB] border border-slate-100 rounded hover:shadow-lg transition">
-                    <h3 class="font-serif-brand text-xl mb-4 text-cyan-800">Dossier Mastery</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Expertise in the creation, review, and maintenance of CTD/eCTD modules for FDA, EMA, and MHRA submissions.</p>
+                    <h3 class="font-serif-brand text-xl mb-4 text-amber-600">Dossier Strategy</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Expertise in compiling and reviewing CTD/eCTD modules for FDA and EMA submissions.</p>
                 </div>
                 <div class="p-8 bg-[#FBFBFB] border border-slate-100 rounded hover:shadow-lg transition">
-                    <h3 class="font-serif-brand text-xl mb-4 text-cyan-800">Compliance Strategy</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Strategic analysis of global healthcare regulations to guide product development and clinical trials alignment.</p>
+                    <h3 class="font-serif-brand text-xl mb-4 text-amber-600">Global Compliance</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Strategic alignment of product development with shifting international healthcare mandates.</p>
                 </div>
                 <div class="p-8 bg-[#FBFBFB] border border-slate-100 rounded hover:shadow-lg transition">
-                    <h3 class="font-serif-brand text-xl mb-4 text-cyan-800">Quality Assurance</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Implementing robust cGMP standards and conducting internal quality audits for production integrity.</p>
+                    <h3 class="font-serif-brand text-xl mb-4 text-amber-600">Quality Systems</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Upholding high-integrity compliance standards through rigorous data review and GxP adherence.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="section-padding bg-slate-50 border-t border-slate-100">
+    <section id="experience" class="section-padding bg-slate-50">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-xs uppercase tracking-[0.5em] text-slate-400 font-bold mb-20 uppercase">Regulatory Practice</h2>
+            <h2 class="text-xs uppercase tracking-[0.5em] text-slate-400 font-bold mb-20">Work Experience</h2>
             
-            <div class="space-y-32">
+            <div class="space-y-24">
                 <div class="grid md:grid-cols-4 gap-8">
-                    <div class="text-slate-400 font-bold text-[11px] uppercase tracking-widest pt-2">2022 — Present</div>
-                    <div class="md:col-span-3 border-l-4 border-cyan-600 pl-10">
-                        <h3 class="text-3xl font-serif-brand text-slate-900 mb-2 font-bold">Regulatory Affairs Specialist</h3>
-                        <p class="text-cyan-700 font-bold text-[10px] uppercase tracking-[0.2em] mb-10">Department of Regulatory Affairs</p>
-                        
-                        <div class="grid md:grid-cols-2 gap-12 text-slate-600 text-[14px] leading-relaxed">
-                            <ul class="space-y-6">
-                                <li>
-                                    <span class="block text-slate-900 font-bold uppercase text-[10px] mb-2 tracking-widest">Global Submissions</span>
-                                    Managing the technical compilation of dossier modules (1-5) for new product registrations across international markets.
-                                </li>
-                                <li>
-                                    <span class="block text-slate-900 font-bold uppercase text-[10px] mb-2 tracking-widest">CMC Compliance</span>
-                                    Reviewing Chemistry, Manufacturing, and Controls (CMC) data to ensure technical consistency and adherence to regional standards.
-                                </li>
-                            </ul>
-                            <ul class="space-y-6">
-                                <li>
-                                    <span class="block text-slate-900 font-bold uppercase text-[10px] mb-2 tracking-widest">Lifecycle Oversight</span>
-                                    Directing post-approval variations and license renewals to prevent market disruption and maintain registration validity.
-                                </li>
-                                <li>
-                                    <span class="block text-slate-900 font-bold uppercase text-[10px] mb-2 tracking-widest">Strategic Collaboration</span>
-                                    Liaising with R&D and Manufacturing to align regulatory strategies with project timelines and health authority expectations.
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="text-slate-400 font-bold text-[11px] uppercase tracking-widest">2022 — PRESENT</div>
+                    <div class="md:col-span-3 border-l-2 border-amber-600 pl-10">
+                        <h3 class="text-2xl font-serif-brand text-slate-900 mb-2">Regulatory Affairs Specialist</h3>
+                        <p class="text-amber-700 font-bold text-xs uppercase tracking-widest mb-6">Department of Regulatory Affairs</p>
+                        <ul class="text-slate-500 text-sm space-y-4 max-w-2xl leading-relaxed">
+                            <li class="flex gap-4"><span>•</span> Leading global dossier submissions for product registrations in line with international health authority guidelines.</li>
+                            <li class="flex gap-4"><span>•</span> Managing life-cycle maintenance of existing licenses and post-approval variations.</li>
+                            <li class="flex gap-4"><span>•</span> Reviewing scientific data and technical documentation for compliance with strict regulatory protocols.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="text-slate-400 font-bold text-[11px] uppercase tracking-widest">PREVIOUS EXPERIENCE</div>
+                    <div class="md:col-span-3 border-l-2 border-slate-200 pl-10">
+                        <h3 class="text-2xl font-serif-brand text-slate-900 mb-2 font-bold italic">Regulatory Affairs & Operations</h3>
+                        <p class="text-slate-500 font-bold text-xs uppercase tracking-widest mb-6 italic">Strategic Compliance & Reporting</p>
+                        <ul class="text-slate-500 text-sm space-y-4 max-w-2xl leading-relaxed italic">
+                            <li class="flex gap-4 italic font-light"><span>•</span> Optimized Standard Operating Procedures (SOPs) to enhance internal compliance audits.</li>
+                            <li class="flex gap-4 italic font-light"><span>•</span> Facilitated cross-departmental coordination to ensure documentation readiness for health inspections.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-32 bg-slate-900 text-white text-center">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-xs uppercase tracking-[0.5em] text-cyan-500 font-bold mb-12">Connect</h2>
+    <section id="contact" class="py-32 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-xs uppercase tracking-[0.5em] text-amber-500 font-bold mb-12">Official Channel</h2>
             <h3 class="text-4xl md:text-6xl font-serif-brand mb-16 leading-tight">Ready to discuss <br>Strategic Compliance.</h3>
             
             <div class="flex flex-col md:flex-row justify-center items-center gap-12">
                 <a href="mailto:patilabhishek503@gmail.com" class="group">
-                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-2 group-hover:text-cyan-500 transition">Email Specialist</p>
-                    <span class="text-xl md:text-2xl font-light border-b border-white/20 pb-2 transition hover:text-cyan-500">patilabhishek503@gmail.com</span>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-2 group-hover:text-amber-500 transition">Direct Email</p>
+                    <span class="text-xl md:text-2xl font-light border-b border-white/20 pb-2 transition group-hover:text-amber-500">patilabhishek503@gmail.com</span>
                 </a>
                 <a href="https://linkedin.com/in/abhishek-patil-reg-affair/" target="_blank" class="group">
-                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-2 group-hover:text-cyan-500 transition">Network</p>
-                    <span class="text-xl md:text-2xl font-light border-b border-white/20 pb-2 text-cyan-500">LinkedIn Profile</span>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-2 group-hover:text-amber-500 transition">Official Profile</p>
+                    <span class="text-xl md:text-2xl font-light border-b border-white/20 pb-2 text-amber-500">LinkedIn Profile</span>
                 </a>
             </div>
         </div>
