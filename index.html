@@ -11,6 +11,12 @@
         .font-serif-brand { font-family: 'Marcellus', serif; }
         .section-padding { padding: 100px 0; }
         .glass-nav { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.9); }
+        
+        /* Ensures the image container has a professional look even while loading */
+        .image-container {
+            background-color: #f1f5f9;
+            position: relative;
+        }
     </style>
 </head>
 <body class="bg-[#FBFBFB] text-slate-900">
@@ -42,11 +48,12 @@
                 <a href="#experience" class="bg-slate-900 text-white px-8 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-amber-600 transition shadow-lg">View Experience</a>
             </div>
             
-            <div class="h-[480px] relative rounded-sm overflow-hidden shadow-2xl border border-slate-100">
-                <img src="https://images.unsplash.com/photo-1532187863486-abf9d39d99c5?auto=format&fit=crop&q=80&w=2070" 
+            <div class="h-[480px] image-container rounded-sm overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1532187863486-abf9d39d99c5?auto=format&fit=crop&q=80&w=1000" 
                      alt="Regulatory Science" 
-                     class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-slate-900/10"></div>
+                     class="w-full h-full object-cover block"
+                     onerror="this.src='https://via.placeholder.com/1000x1200/0f172a/fbbf24?text=Regulatory+Affairs+Excellence'">
+                <div class="absolute inset-0 bg-slate-900/5 pointer-events-none"></div>
             </div>
         </div>
     </header>
@@ -62,19 +69,19 @@
 
     <section id="expertise" class="section-padding bg-white">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-xs uppercase tracking-[0.5em] text-slate-400 font-bold mb-16 uppercase text-center">Specialized Competencies</h2>
+            <h2 class="text-xs uppercase tracking-[0.5em] text-slate-400 font-bold mb-16 uppercase text-center">Core Expertise</h2>
             <div class="grid md:grid-cols-3 gap-12">
                 <div class="p-8 border border-slate-100 rounded hover:border-amber-200 transition">
                     <h3 class="font-serif-brand text-xl mb-4 text-amber-600">Dossier Mastery</h3>
-                    <p class="text-slate-500 text-sm">Compilation and technical review of CTD/eCTD modules for successful global market entry.</p>
+                    <p class="text-slate-500 text-sm">Expert review of technical documentation for CTD/eCTD modules.</p>
                 </div>
                 <div class="p-8 border border-slate-100 rounded hover:border-amber-200 transition">
-                    <h3 class="font-serif-brand text-xl mb-4 text-amber-600">Strategic Intelligence</h3>
-                    <p class="text-slate-500 text-sm">Interpreting shifting health authority guidelines to align clinical and manufacturing pipelines.</p>
+                    <h3 class="font-serif-brand text-xl mb-4 text-amber-600">Global Strategy</h3>
+                    <p class="text-slate-500 text-sm">Aligning product lifecycles with international health authority mandates.</p>
                 </div>
                 <div class="p-8 border border-slate-100 rounded hover:border-amber-200 transition">
-                    <h3 class="font-serif-brand text-xl mb-4 text-amber-600">GxP Compliance</h3>
-                    <p class="text-slate-500 text-sm">Implementation of rigorous quality systems and SOPs to ensure 100% audit readiness.</p>
+                    <h3 class="font-serif-brand text-xl mb-4 text-amber-600">Compliance Audit</h3>
+                    <p class="text-slate-500 text-sm">Developing SOPs to maintain absolute quality and audit readiness.</p>
                 </div>
             </div>
         </div>
@@ -90,20 +97,9 @@
                         <h3 class="text-2xl font-serif-brand text-slate-900 mb-2">Regulatory Affairs Specialist</h3>
                         <p class="text-amber-700 font-bold text-xs uppercase tracking-widest mb-6">Department of Regulatory Affairs</p>
                         <ul class="text-slate-500 text-sm space-y-4 max-w-2xl leading-relaxed">
-                            <li class="flex gap-4"><span>•</span> Leading global dossier submissions for product registrations in line with international health authority guidelines.</li>
-                            <li class="flex gap-4"><span>•</span> Managing life-cycle maintenance of existing licenses and post-approval variations.</li>
-                            <li class="flex gap-4"><span>•</span> Reviewing scientific data and technical documentation for compliance with strict regulatory protocols.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="grid md:grid-cols-4 gap-8">
-                    <div class="text-slate-400 font-bold text-[11px] uppercase tracking-widest">PREVIOUS EXPERIENCE</div>
-                    <div class="md:col-span-3 border-l-2 border-slate-200 pl-10">
-                        <h3 class="text-2xl font-serif-brand text-slate-900 mb-2 font-bold italic">Regulatory Affairs & Operations</h3>
-                        <p class="text-slate-500 font-bold text-xs uppercase tracking-widest mb-6 italic">Strategic Compliance & Reporting</p>
-                        <ul class="text-slate-500 text-sm space-y-4 max-w-2xl leading-relaxed italic">
-                            <li class="flex gap-4 italic font-light"><span>•</span> Optimized Standard Operating Procedures (SOPs) to enhance internal compliance audits.</li>
-                            <li class="flex gap-4 italic font-light"><span>•</span> Facilitated cross-departmental coordination to ensure documentation readiness for health inspections.</li>
+                            <li class="flex gap-4"><span>•</span> Leading global dossier submissions for product registrations.</li>
+                            <li class="flex gap-4"><span>•</span> Managing life-cycle maintenance and post-approval variations.</li>
+                            <li class="flex gap-4"><span>•</span> Reviewing scientific data for strict regulatory protocol compliance.</li>
                         </ul>
                     </div>
                 </div>
@@ -113,23 +109,19 @@
 
     <section id="contact" class="py-32 bg-slate-900 text-white">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-xs uppercase tracking-[0.5em] text-amber-500 font-bold mb-12 uppercase">Official Channel</h2>
+            <h2 class="text-xs uppercase tracking-[0.5em] text-amber-500 font-bold mb-12">Official Channel</h2>
             <h3 class="text-4xl md:text-6xl font-serif-brand mb-16 leading-tight">Ready to discuss <br>Strategic Compliance.</h3>
             <div class="flex flex-col md:flex-row justify-center items-center gap-12">
                 <a href="mailto:patilabhishek503@gmail.com" class="group">
-                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-2 group-hover:text-amber-500 transition">Direct Email</p>
-                    <span class="text-xl md:text-2xl font-light border-b border-white/20 pb-2 transition">patilabhishek503@gmail.com</span>
-                </a>
-                <a href="https://linkedin.com/in/abhishek-patil-reg-affair/" target="_blank" class="group">
-                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-2 group-hover:text-amber-500 transition">Official Profile</p>
-                    <span class="text-xl md:text-2xl font-light border-b border-white/20 pb-2 text-amber-500">LinkedIn Profile</span>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-2">Direct Email</p>
+                    <span class="text-xl md:text-2xl font-light border-b border-white/20 pb-2 hover:text-amber-500 transition">patilabhishek503@gmail.com</span>
                 </a>
             </div>
         </div>
     </section>
 
     <footer class="py-12 bg-slate-900 border-t border-white/5 text-center">
-        <p class="text-slate-600 text-[10px] uppercase tracking-[0.4em]">© 2026 ABHISHEK PATIL | REGULATORY AFFAIRS EXCELLENCE</p>
+        <p class="text-slate-600 text-[10px] uppercase tracking-[0.4em]">© 2026 ABHISHEK PATIL</p>
     </footer>
 
 </body>
