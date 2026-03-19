@@ -11,8 +11,7 @@
         .font-serif-brand { font-family: 'Marcellus', serif; }
         .section-padding { padding: 100px 0; }
         .glass-nav { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.9); }
-        .regulatory-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
-        .img-container { position: relative; width: 100%; height: 500px; background: #1e293b; overflow: hidden; border-radius: 4px; }
+        .regulatory-gradient { background: #1e293b; position: relative; }
     </style>
 </head>
 <body class="bg-[#FBFBFB] text-slate-900">
@@ -44,12 +43,16 @@
                 <a href="#experience" class="bg-slate-900 text-white px-8 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-amber-600 transition shadow-lg">View Experience</a>
             </div>
             
-            <div class="img-container shadow-2xl">
-                <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, #fbbf24 0, #fbbf24 1px, transparent 0, transparent 50%); background-size: 30px 30px;"></div>
-                <img src="https://raw.githubusercontent.com/abhishekpatil-ra/profile/main/photo.jpg" 
-                     onerror="this.src='https://placehold.co/600x800/1e293b/fbbf24?text=Abhishek+Patil'"
+            <div class="h-[500px] w-full regulatory-gradient rounded-sm overflow-hidden shadow-2xl flex items-center justify-center">
+                <img src="abhishek-profile.jpg"
                      alt="Abhishek Patil" 
-                     class="relative z-10 w-full h-full object-cover">
+                     class="w-full h-full object-cover"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                
+                <div style="display:none;" class="flex flex-col items-center justify-center text-center p-10">
+                    <span class="font-serif-brand text-4xl text-amber-500 uppercase tracking-widest">Abhishek Patil</span>
+                    <p class="text-slate-400 text-[10px] mt-4 uppercase tracking-[0.2em]">Regulatory Affairs Specialist</p>
+                </div>
             </div>
         </div>
     </header>
@@ -69,15 +72,15 @@
             <div class="grid md:grid-cols-3 gap-12">
                 <div class="p-8 border border-slate-100 hover:border-amber-200 transition">
                     <h3 class="font-serif-brand text-xl mb-4 text-slate-900">Dossier Publishing</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed font-light">Preparation and submission of CTD/eCTD dossiers for global markets (NDA/ANDA).</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Expertise in CTD/eCTD formats for high-quality global submissions (NDA/ANDA).</p>
                 </div>
                 <div class="p-8 border border-slate-100 hover:border-amber-200 transition">
                     <h3 class="font-serif-brand text-xl mb-4 text-slate-900">CMC Compliance</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed font-light">Technical review of Manufacturing and Quality controls per ICH/FDA guidelines.</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Rigorous review of Manufacturing and Quality controls to meet international standards.</p>
                 </div>
                 <div class="p-8 border border-slate-100 hover:border-amber-200 transition">
                     <h3 class="font-serif-brand text-xl mb-4 text-slate-900">Lifecycle Management</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed font-light">Handling post-approval variations, renewals, and maintenance of product licenses.</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Strategic handling of post-approval variations and license maintenance.</p>
                 </div>
             </div>
         </div>
@@ -91,10 +94,10 @@
                     <div class="text-slate-400 font-bold text-[11px] uppercase tracking-widest">2022 — PRESENT</div>
                     <div class="md:col-span-3 border-l-2 border-amber-600 pl-10">
                         <h3 class="text-2xl font-serif-brand text-slate-900 mb-2">Regulatory Affairs Specialist</h3>
-                        <p class="text-amber-700 font-bold text-xs uppercase tracking-widest mb-6 uppercase">Department of Regulatory Affairs</p>
+                        <p class="text-amber-700 font-bold text-xs uppercase tracking-widest mb-6 uppercase">Current Role</p>
                         <ul class="text-slate-500 text-sm space-y-4 max-w-2xl leading-relaxed">
-                            <li>• Leading global dossier submissions and lifecycle maintenance.</li>
-                            <li>• Reviewing scientific data for strict regulatory compliance.</li>
+                            <li>• Leading dossier submissions and lifecycle maintenance across global health authorities.</li>
+                            <li>• Ensuring scientific documentation meets strict quality protocols.</li>
                         </ul>
                     </div>
                 </div>
@@ -104,23 +107,22 @@
 
     <section id="contact" class="py-32 bg-slate-900 text-white">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-xs uppercase tracking-[0.5em] text-amber-500 font-bold mb-12">Official Channel</h2>
-            <h3 class="text-4xl md:text-6xl font-serif-brand mb-16 leading-tight">Ready to discuss <br>Strategic Compliance.</h3>
+            <h3 class="text-4xl md:text-6xl font-serif-brand mb-16">Ready to discuss <br>Strategic Compliance.</h3>
             <div class="flex flex-col md:flex-row justify-center items-center gap-12">
                 <a href="mailto:patilabhishek503@gmail.com" class="group">
-                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-2 group-hover:text-amber-500 transition">Direct Email</p>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-2">Direct Email</p>
                     <span class="text-xl md:text-2xl font-light border-b border-white/20 pb-2 transition">patilabhishek503@gmail.com</span>
                 </a>
                 <a href="https://linkedin.com/in/abhishek-patil-reg-affair/" target="_blank" class="group">
-                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-2 group-hover:text-amber-500 transition">Official Profile</p>
-                    <span class="text-xl md:text-2xl font-light border-b border-white/20 pb-2 text-amber-500">LinkedIn Profile</span>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-2">LinkedIn Profile</p>
+                    <span class="text-xl md:text-2xl font-light border-b border-white/20 pb-2 text-amber-500">Official Profile</span>
                 </a>
             </div>
         </div>
     </section>
 
     <footer class="py-12 bg-slate-900 border-t border-white/5 text-center">
-        <p class="text-slate-600 text-[10px] uppercase tracking-[0.4em]">© 2026 ABHISHEK PATIL | REGULATORY AFFAIRS EXCELLENCE</p>
+        <p class="text-slate-600 text-[10px] uppercase tracking-[0.4em]">© 2026 ABHISHEK PATIL</p>
     </footer>
 
 </body>
